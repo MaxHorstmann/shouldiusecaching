@@ -2,14 +2,14 @@
 	<head>
 		<title>Should I use caching?</title>
 	<body>
-		<div id="spinner" style="font-size: 150pt; margin-top: 300px; text-align: center">please wait...</div>
+		<div id="spinner" style="margin-top: 300px; text-align: center">
+			<img src="ajax-loader.gif" alt="loading..."></div>
 		<div id="nope" style="display:none; font-size: 150pt; margin-top: 300px; text-align: center">Nope!</div>
 		<script type="text/javascript">
 			setTimeout(function() {
 				document.getElementById("spinner").style.display="none";
 				document.getElementById("nope").style.display="block";
-			}, 5000);
-			
+			}, 60000);			
 		</script>
 	</body>
 </html>
